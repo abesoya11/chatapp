@@ -1,0 +1,23 @@
+#messageLog {
+  border: 1px solid green;
+  height: 200px;
+  margin-bottom: 20px;
+  overflow-y: scroll;
+}
+
+h1 {
+  color: rgb(171, 41, 41);
+  text-align: center;
+}
+
+#form {
+  border: 1px solid black;
+}
+
+.msg {
+  background-color: grey;
+}
+
+.introMsg {
+  background-color: rgb(244, 140, 140);
+}
