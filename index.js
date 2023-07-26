@@ -30,6 +30,13 @@ io.on("connection", (socket) => {
   socket.on("chat message", (data) => {
     socket.to(data.room).emit("chat display", data);
   });
+
+  socket.on("disconnect", (user) => {
+    console.log(`${user.name} has exited`);
+  });
+  // socket.on( "diconnect",(user.name)=> {
+  //   console.log(`${user.name} has exited`)
+  // })
 });
 
 server.listen(3000);
